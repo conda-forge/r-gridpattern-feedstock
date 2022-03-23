@@ -1,4 +1,4 @@
-{% set version = '0.5.1' %}
+{% set version = "0.5.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gridpattern_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gridpattern/gridpattern_{{ version }}.tar.gz
-  sha256: 3c69f766f7c61e7a3e415fe48c71fed7ada44be3b8401c032f49e773f90414fb
+  sha256: 372276e9945f7af1f9f4a5a42b96d6cb50eb8d6dca38da144ee733d65249a3c9
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -47,11 +47,8 @@ test:
 about:
   home: https://trevorldavis.com/R/gridpattern/, https://github.com/trevorld/gridpattern
   license: MIT
-  summary: Provides 'grid' grobs that fill in a user-defined area with various patterns.  Includes
-    enhanced versions of the geometric and image-based patterns originally contained
-    in the 'ggpattern' package as well as original 'pch', 'polygon_tiling', 'regular_polygon',
-    'rose', 'text', 'wave', and 'weave' patterns plus support for custom user-defined
-    patterns.
+  summary: Provides 'grid' grobs that fill in a user-defined area with various patterns.  Includes enhanced versions of the geometric and image-based patterns originally contained in the 'ggpattern' package as well as original 'pch', 'polygon_tiling', 'regular_polygon', 'rose', 'text', 'wave', and 'weave' patterns plus support
+    for custom user-defined patterns.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
