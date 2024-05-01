@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gridpattern_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gridpattern/gridpattern_{{ version }}.tar.gz
-  sha256: 5128054a3e9fb5a493cda0e984563fc472af8631a0da93b31a9be46cd773fdec
+  sha256: 6871b132b233c997e05cd87d04443ec1abf502ce8549db44f9a3e502c7e47066
 
 build:
   merge_build_host: true  # [win]
