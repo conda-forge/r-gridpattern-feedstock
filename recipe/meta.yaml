@@ -1,4 +1,4 @@
-{% set version = "1.4.2" %}
+{% set version = "1.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gridpattern_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gridpattern/gridpattern_{{ version }}.tar.gz
-  sha256: eb6dad33e7364c725706324f92a5d1e349bab21f602e39a75d7280919a2ee641
+  sha256: ae7a90b2584131f3184946ac7b3bf8fecbcd57c424391929898d18c77c8cd04e
 
 build:
   number: 0
